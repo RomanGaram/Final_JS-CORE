@@ -1,0 +1,233 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+#wraper{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+}
+
+.timer_wraper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+    background: #000658;
+    text-align: center;
+    border-radius: 20px;
+    margin-bottom: 15px;
+}
+
+.timer_value{
+    font-size: 4.5rem;
+    font-weight: 600;
+    font-family: 'Arial', Times, serif;
+    padding: 0;
+    margin: 10px auto 10px;
+    color: whitesmoke;
+}
+
+.timer_span{
+    display: block;
+    width: 195px;
+    height: 75px;
+}
+
+
+#game_field{
+    width: 80%;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.controls{
+    width: 80%;
+    margin: 10px auto;
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+}
+
+button{
+    width: 20%;
+    padding: 10px;
+    background: #000658;
+    border-radius: 15px;
+    color: whitesmoke;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.controls > button:hover{
+    position: relative;
+    top: 2px;
+    left: 2px;
+    background: #000ba5;
+    box-shadow: 6px 6px 15px 0px #000658;
+}
+
+.disabled-button {
+    background-color: gray;
+    cursor: not-allowed;
+    opacity: 0.4;
+    pointer-events: none;
+}
+
+.field_for_game{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.left_box, .right_box{
+    display: flex;
+    flex-wrap: wrap; 
+    width: 400px;
+    height: 400px;
+    box-shadow: 3px 3px 10px 3px #000658;
+    
+}
+
+.piece{
+    width: 100px; 
+    height: 100px;
+    border: 1px solid black;
+    box-sizing: border-box;
+}
+.pieceImg{
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.p1 {
+    background-image: url(./parts/getimag_1.jpg);
+}
+.p2 {
+    background-image: url(./parts/getimag_2.jpg);
+}
+.p3 {
+    background-image: url(./parts/getimag_3.jpg);
+}
+.p4 {
+    background-image: url(./parts/getimag_4.jpg);
+}
+.p5 {
+    background-image: url(./parts/getimag_5.jpg);
+}
+.p6 {
+    background-image: url(./parts/getimag_6.jpg);
+}
+.p7 {
+    background-image: url(./parts/getimag_7.jpg);
+}
+.p8 {
+    background-image: url(./parts/getimag_8.jpg);
+}
+.p9 {
+    background-image: url(./parts/getimag_9.jpg);
+}
+.p10 {
+    background-image: url(./parts/getimag_10.jpg);
+}
+.p11 {
+    background-image: url(./parts/getimag_11.jpg);
+}
+.p12 {
+    background-image: url(./parts/getimag_12.jpg);
+}
+.p13 {
+    background-image: url(./parts/getimag_13.jpg);
+}
+.p14 {
+    background-image: url(./parts/getimag_14.jpg);
+}
+.p15 {
+    background-image: url(./parts/getimag_15.jpg);
+}
+.p16 {
+    background-image: url(./parts/getimag_16.jpg);
+}
+.ordered{
+    width: 100px; 
+    height: 100px;
+    border: 1px solid black;
+    box-sizing: border-box;
+    background-image:url(./parts/blank.jpg)
+
+}
+
+.modal-container {
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    opacity: 0;
+    position: relative;
+    top: -100vh;
+    left: 0;
+    z-index: -1;
+}
+.modal {
+    width: 600px;
+    height: 200px;
+    border-radius: 6px;
+    background-color: rgb(131, 125, 125);
+    margin: auto;
+    position: absolute;
+    top: -200px;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+}
+
+.modal-text {
+    width: 100%;
+    height: 80px;
+    border-top: 2px solid #000658;
+    border-bottom: 2px solid #000658;
+    margin-top: 4%;
+    font-size: 35px;
+    line-height: 80px;
+    text-align: center;
+    font-weight: 700;
+    color: azure;
+}
+.modal-buttons {
+    width: 45%;
+    margin: 4% auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 12px;
+}
+.modal-btn-close {
+    background-color: #b10303;
+    box-shadow: 6px 6px 15px 0px #750303;
+}
+.modal-btn-check {
+    background-color: #000ba5;
+    box-shadow: 6px 6px 15px 0px #000658;
+}
+.modal button {
+    display: block;
+    border-radius: 4px;
+    width: 90px;
+    padding: 8px 3px;
+}
+.modal button:hover {
+    box-shadow: 0 0 6px 0px rgb(214, 214, 214);
+    font-size: 18.5px;
+    transition: 0.05s;
+}
